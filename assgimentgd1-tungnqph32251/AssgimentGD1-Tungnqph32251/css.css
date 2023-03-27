@@ -1,0 +1,338 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* box-sizing: border-box; là một thuộc tính CSS để xác định cách tính kích thước của một phần tử HTML. */
+}
+
+body {
+  width: auto;
+  margin: 0 auto;
+}
+
+/* Phần Đầu Trang Web */
+/* Nền Header */
+header {
+  background-color: orange;
+  width: auto;
+  height: 120px;
+}
+
+.float {
+  display: flex;
+  justify-content: space-between;
+  /* Thuộc tính CSS "justify-content: space-between;" được sử dụng để căn giữa các phần tử con trong container theo chiều ngang và tạo khoảng trống đều giữa chúng */
+  align-items: center;
+  height: 50px;
+  position: relative;
+}
+
+/* phần ảnh logo */
+.image-logo {
+  position: absolute;
+  top: 0;
+}
+.image-logo img {
+  width: 20%;
+  height: 5%;
+  margin: 10px 10px;
+}
+
+/* Phần menu */
+.menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+.menu li {
+  margin-right: 20px;
+}
+.menu li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/* Phần tìm kiếm */
+.search-buy {
+  position: relative;
+}
+.search-box {
+  position: absolute;
+  right: 60px;
+}
+.search-box input {
+  width: 250px;
+  /* kích thước input là 300px */
+  height: 30px;
+}
+.search-box button {
+  height: 30px;
+}
+.buy {
+  background-image: url("https://banner2.cleanpng.com/20190419/iwz/kisspng-shopping-cart-software-computer-icons-go-shopping-png-icons-and-graphics-png-repo-free-5cba1c3dca2440.854946711555700797828.jpg");
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-right: 27px;
+}
+
+/* Khoảng trống giữa header và banner */
+.space-background {
+  background-color: bisque;
+  width: auto;
+  height: 25px;
+}
+
+
+/* Phần Banner */
+.slideshow img {
+  width: 100%;
+  height: 300px;
+}
+
+
+/* Phần Danh Mục */
+.categories {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* flex-wrap: wrap; sẽ cho phép các phần tử con bên trong phần tử HTML cha có thể bị "bọc" (wrap) xuống dòng nếu không đủ chỗ trên cùng một hàng. */
+}
+.categories a {
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: column là một thuộc tính trong CSS cho phép sắp xếp các phần tử con bên trong một container theo hướng dọc. */
+  align-items: center;
+  margin: 10px;
+  text-decoration: none;
+  color: #333;
+}
+.categories a:hover {
+  opacity: 0.7;
+  /* opacity là một thuộc tính CSS được sử dụng để xác định độ mờ của một phần tử. Giá trị của thuộc tính này là một số từ 0 đến 1 */
+}
+.categories img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  /* object-fit: cover; là một thuộc tính CSS được sử dụng để điều chỉnh hình ảnh hoặc video sao cho nó phù hợp với kích thước của phần tử cha mà nó đang nằm trong đồng thời giữ nguyên tỉ lệ hình ảnh */
+  border-radius: 80%;
+}
+.category-name {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+/* Phần Sự Kiện */
+.event-slide {
+  display: flex;
+  /* tạo flex container */
+  justify-content: space-between;
+  /* canh chỉnh khoảng cách giữa các ảnh */
+  padding: 0 10px;
+  /* tạo khoảng cách với lề trái và lề phải của container */
+}
+.event-slide img {
+  width: 33%;
+  /* chiếm 1/3 độ rộng của container, tương ứng với 3 ảnh trên 1 hàng */
+  padding: 0 5px;
+  /* tạo khoảng cách giữa các ảnh */
+  box-sizing: border-box;
+  /* tính cả padding vào độ rộng của ảnh */
+  border: 1px solid #ccc;
+  /* tạo border cho ảnh */
+}
+
+/* phần tiêu đề của gian hàng */
+.box-header {
+  border: 1px solid black;
+  width: 200px;
+  height: 50px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top:5px;
+  line-height: 50px;
+}
+.box-header p {
+  color: black;
+}
+
+
+/* Gian Hàng */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.box-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+  height: 220px;
+  margin: 5px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  text-align: center;
+  text-decoration: none;
+}
+.box-item:hover {
+  background-color: gray;
+  color: lavenderblush;
+}
+.box-item img {
+  width: 100%;
+  height: auto;
+}
+.box-item p {
+  margin-top: 10px;
+  color: black;
+}
+
+/* Phần Chân Trang Của Gian Hàng */
+.box-footer {
+  border: 1px solid black;
+  width: 200px;
+  height: 50px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+  line-height: 50px;
+}
+
+
+/* Phần chân trang của web */
+footer {
+  background-color: olive;
+  width: auto;
+}
+.content-left {
+  margin-left: 10px;
+}
+.text a{
+  text-decoration: none;
+  color: #ccc;
+}
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.content-right {
+  float: right;
+  margin-left: 10px;
+}
+/* Phần Bảng Thanh Toán */
+.payment-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: end;
+}
+.payment-icons img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+@media screen and (max-width: 475px) {
+  /* Iphone SE */
+   /* Điều chỉnh kích thước các phần tử khi màn hình có chiều rộng nhỏ hơn hoặc bằng 768px */
+   .menu-container {
+    position: relative;
+    margin-left: 83% ;
+  }
+  
+  .menu-toggle {
+    display: block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin-bottom: 4px;
+    position: relative;
+    background-color: #333;
+    transition: transform 0.4s ease-out;
+  }
+  
+  .menu-toggle span:last-child {
+    margin-bottom: 0;
+  }
+  
+  .menu-toggle.active span:first-child {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.active span:last-child {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    padding: 10px;
+  }
+  
+  .menu.active {
+    display: block;
+  }
+
+  .search-box input[type="text"] {
+    width: 150px;
+  }
+
+  .search-box button[type="text"] {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  /* Ipad mini */
+  .category-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .category-container a {
+    flex-basis: calc(16.666% - 10px); /* Tính giá trị flex-basis để mỗi phần tử chiếm 16.666% chiều rộng và có 10px khoảng cách giữa chúng */
+    margin-right: 10px; /* Khoảng cách giữa các phần tử */
+    margin-bottom: 10px; /* Khoảng cách giữa các hàng */
+  }
+  
+  .category-container a:last-child {
+    margin-right: 0; /* Loại bỏ khoảng cách phía bên phải của phần tử cuối cùng */
+  }
+  
+}

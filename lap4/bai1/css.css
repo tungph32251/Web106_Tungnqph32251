@@ -1,10 +1,11 @@
 *{
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* áp dụng phông chữ in đậm vào văn bản */
   }
   .container-grid{
     display: grid;
     grid-template-columns: auto auto auto;
+    /* Nó được sử dụng để xác định kích thước và định vị các cột trong grid layout */
     background-color: #BCE2C9;
     text-align: center;
     gap: 10px;
