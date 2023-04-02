@@ -1,0 +1,28 @@
+.container-fluid img{
+    width: 10%;
+    height: 5%;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+.nav-item .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  /* Fill:Thuộc tính này được sử dụng để đặt màu nền hoặc màu sắc cho một hình dạng trong SVG */
+  'wght' 400,
+  /* Thuộc tính này được sử dụng để đặt độ đậm của chữ trong một phông chữ. Giá trị 400 thường được sử dụng để chỉ độ đậm trung bình. */
+  'GRAD' 0,
+
+  'opsz' 48
+  /* là giá trị của thuộc tính "font-size" trong CSS, được đặt thành 48
+  . Thuộc tính này được sử dụng để đặt kích thước của chữ trong một phông chữ */
+}
+
+.material-symbols-outlined{
+    color: black;
+    
+}
+.card{
+  height: 27em;
+}

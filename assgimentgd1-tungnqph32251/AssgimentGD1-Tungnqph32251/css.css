@@ -32,9 +32,10 @@ header {
   position: absolute;
   top: 0;
 }
+
 .image-logo img {
-  width: 20%;
-  height: 5%;
+  width: 30%;
+  height: 10%;
   margin: 10px 10px;
 }
 
@@ -44,13 +45,16 @@ header {
   top: 10px;
   right: 10px;
 }
+
 .menu ul {
   list-style: none;
   display: flex;
 }
+
 .menu li {
   margin-right: 20px;
 }
+
 .menu li a {
   text-decoration: none;
   color: aliceblue;
@@ -60,21 +64,28 @@ header {
 .search-buy {
   position: relative;
 }
+
 .search-box {
   position: absolute;
   right: 60px;
 }
+
 .search-box input {
   width: 250px;
   /* kích thước input là 300px */
   height: 30px;
 }
+
 .search-box button {
   height: 30px;
 }
-.buy {
-  background-image: url("https://banner2.cleanpng.com/20190419/iwz/kisspng-shopping-cart-software-computer-icons-go-shopping-png-icons-and-graphics-png-repo-free-5cba1c3dca2440.854946711555700797828.jpg");
-  width: 30px;
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48 width: 30px;
   height: 30px;
   float: right;
   margin-right: 27px;
@@ -91,7 +102,7 @@ header {
 /* Phần Banner */
 .slideshow img {
   width: 100%;
-  height: 300px;
+
 }
 
 
@@ -103,6 +114,7 @@ header {
   flex-wrap: wrap;
   /* flex-wrap: wrap; sẽ cho phép các phần tử con bên trong phần tử HTML cha có thể bị "bọc" (wrap) xuống dòng nếu không đủ chỗ trên cùng một hàng. */
 }
+
 .categories a {
   display: flex;
   flex-direction: column;
@@ -112,10 +124,12 @@ header {
   text-decoration: none;
   color: #333;
 }
+
 .categories a:hover {
   opacity: 0.7;
   /* opacity là một thuộc tính CSS được sử dụng để xác định độ mờ của một phần tử. Giá trị của thuộc tính này là một số từ 0 đến 1 */
 }
+
 .categories img {
   width: 150px;
   height: 150px;
@@ -123,6 +137,7 @@ header {
   /* object-fit: cover; là một thuộc tính CSS được sử dụng để điều chỉnh hình ảnh hoặc video sao cho nó phù hợp với kích thước của phần tử cha mà nó đang nằm trong đồng thời giữ nguyên tỉ lệ hình ảnh */
   border-radius: 80%;
 }
+
 .category-name {
   margin-top: 10px;
   font-size: 18px;
@@ -139,6 +154,7 @@ header {
   padding: 0 10px;
   /* tạo khoảng cách với lề trái và lề phải của container */
 }
+
 .event-slide img {
   width: 33%;
   /* chiếm 1/3 độ rộng của container, tương ứng với 3 ảnh trên 1 hàng */
@@ -159,9 +175,10 @@ header {
   display: flex;
   justify-content: center;
   margin: auto;
-  margin-top:5px;
+  margin-top: 5px;
   line-height: 50px;
 }
+
 .box-header p {
   color: black;
 }
@@ -175,6 +192,7 @@ header {
   margin-left: 10px;
   margin-right: 10px;
 }
+
 .box-item {
   display: flex;
   flex-direction: column;
@@ -188,14 +206,17 @@ header {
   text-align: center;
   text-decoration: none;
 }
+
 .box-item:hover {
   background-color: gray;
   color: lavenderblush;
 }
+
 .box-item img {
   width: 100%;
   height: auto;
 }
+
 .box-item p {
   margin-top: 10px;
   color: black;
@@ -220,13 +241,16 @@ footer {
   background-color: olive;
   width: auto;
 }
+
 .content-left {
   margin-left: 10px;
 }
-.text a{
+
+.text a {
   text-decoration: none;
   color: #ccc;
 }
+
 .main-footer {
   display: flex;
   justify-content: space-between;
@@ -237,6 +261,7 @@ footer {
   float: right;
   margin-left: 10px;
 }
+
 /* Phần Bảng Thanh Toán */
 .payment-icons {
   display: grid;
@@ -245,6 +270,7 @@ footer {
   gap: 10px;
   justify-items: end;
 }
+
 .payment-icons img {
   max-width: 100%;
   height: auto;
@@ -253,13 +279,14 @@ footer {
 
 
 @media screen and (max-width: 475px) {
+
   /* Iphone SE */
-   /* Điều chỉnh kích thước các phần tử khi màn hình có chiều rộng nhỏ hơn hoặc bằng 768px */
-   .menu-container {
+  /* Điều chỉnh kích thước các phần tử khi màn hình có chiều rộng nhỏ hơn hoặc bằng 475px */
+  .menu-container {
     position: relative;
-    margin-left: 83% ;
+    margin-left: 83%;
   }
-  
+
   .menu-toggle {
     display: block;
     position: relative;
@@ -267,7 +294,7 @@ footer {
     cursor: pointer;
     padding: 10px;
   }
-  
+
   .menu-toggle span {
     display: block;
     width: 24px;
@@ -277,23 +304,23 @@ footer {
     background-color: #333;
     transition: transform 0.4s ease-out;
   }
-  
+
   .menu-toggle span:last-child {
     margin-bottom: 0;
   }
-  
+
   .menu-toggle.active span:first-child {
     transform: rotate(45deg) translate(5px, 5px);
   }
-  
+
   .menu-toggle.active span:nth-child(2) {
     opacity: 0;
   }
-  
+
   .menu-toggle.active span:last-child {
     transform: rotate(-45deg) translate(5px, -5px);
   }
-  
+
   .menu {
     display: none;
     position: absolute;
@@ -301,10 +328,10 @@ footer {
     left: 0;
     z-index: 0;
     background-color: #fff;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     padding: 10px;
   }
-  
+
   .menu.active {
     display: block;
   }
@@ -319,20 +346,25 @@ footer {
 }
 
 @media screen and (max-width: 825px) {
+
   /* Ipad mini */
   .category-container {
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .category-container a {
-    flex-basis: calc(16.666% - 10px); /* Tính giá trị flex-basis để mỗi phần tử chiếm 16.666% chiều rộng và có 10px khoảng cách giữa chúng */
-    margin-right: 10px; /* Khoảng cách giữa các phần tử */
-    margin-bottom: 10px; /* Khoảng cách giữa các hàng */
+    flex-basis: calc(16.666% - 10px);
+    /* Tính giá trị flex-basis để mỗi phần tử chiếm 16.666% chiều rộng và có 10px khoảng cách giữa chúng */
+    margin-right: 10px;
+    /* Khoảng cách giữa các phần tử */
+    margin-bottom: 10px;
+    /* Khoảng cách giữa các hàng */
   }
-  
+
   .category-container a:last-child {
-    margin-right: 0; /* Loại bỏ khoảng cách phía bên phải của phần tử cuối cùng */
+    margin-right: 0;
+    /* Loại bỏ khoảng cách phía bên phải của phần tử cuối cùng */
   }
-  
+
 }
