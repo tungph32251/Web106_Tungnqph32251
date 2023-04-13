@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,345 +18,418 @@
 
 <body>
     <header>
-        <div class="float">
-            <div class="image-logo">
-                <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh\Ảnh Logo\Shopee.svg" 
-                    alt="ảnh logo shoppe">
-            </div>
+        <nav class="navbar   navbar-expand-lg   bg-body-tertiary">
+            <!-- Chú Giải 1:
+            navbar là một thành phần giao diện người dùng được sử dụng để tạo ra thanh định tuyến (navigation bar) trên trang web. 
+            Thanh định tuyến thường được sử dụng để chứa các liên kết đến các trang khác trong trang web, 
+            hoặc để chứa các liên kết đến các phần khác trong cùng trang web. -->
+
+            <!-- Chú Giải 2:
+            navbar-expand-lg có nghĩa là thanh định tuyến sẽ tự động mở rộng thành một 
+            thanh định tuyến đầy đủ (full navigation bar) trên các màn hình có độ rộng lớn hơn hoặc bằng 992px, -->
+
+            <!-- Chú Giải 3:
+            bg-body-tertiary là một lớp CSS được sử dụng để tạo màu nền (background color) cho thành phần. -->
+
+            <div class="container-fluid">
+                <!-- Chú Giải 4:
+                container-fluid thường được sử dụng để tạo ra các trang web đáp ứng,
+                nơi mà kích thước của trang web phải thích nghi với kích thước của màn hình và các thiết bị khác nhau. 
+                Nó cho phép các phần tử trong khối chứa được tự động điều chỉnh để phù hợp với kích thước màn hình -->
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="#"><img
+                        src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Logo\logo-shopee-inkythuatso (4).svg"
+                        alt="Logo Shoppe" height="50"></a>
+                <!-- Chú Giải 5:Trong Bootstrap, navbar-brand là một thành phần giao diện người dùng được 
+                    sử dụng để hiển thị logo hoặc tên của trang web trên thanh định tuyến (navigation bar). -->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Chú Giải 6:Trong Bootstrap, navbar-toggler 
+                là một thành phần giao diện người dùng được sử dụng để tạo ra một nút bấm để 
+                thu gọn hoặc mở rộng thanh định tuyến (navigation bar)
+                trên trang web.  -->
+
+                    <!-- Chú Giải 7:data-bs-toggle="collapse" là một thuộc tính dữ liệu (data attribute) trong Bootstrap 5, 
+                được sử dụng để kích hoạt hoặc vô hiệu hóa chức năng thu gọn (collapse) của một thành phần trên trang web. -->
+
+                    <!-- Chú Giải 8:data-bs-target="#navbarSupportedContent" xác định thành phần được liên kết với 
+                thanh định tuyến để kích hoạt chức năng mở rộng/thu gọn khi được bấm. -->
+
+                    <!-- Chú Giải 9:aria-controls="navbarSupportedContent" cung cấp một ID cho thành phần được kiểm soát bởi nút mở rộng/thu gọn,
+                để giúp đọc màn hình biết nội dung của thành phần đó. -->
+
+                    <!-- Chú Giải 10:aria-expanded="false" cung cấp trạng thái của thành phần mở rộng/thu gọn.
+                Nếu giá trị là "false", nghĩa là thành phần đang ở trạng thái thu gọn. -->
+
+                    <!-- Chú Giải 11:aria-label="Toggle navigation" cung cấp một nhãn đại diện cho nút mở rộng/thu gọn, 
+                giúp người dùng biết chức năng của nút đó. -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Chú Giải 12:
+                        Class me-auto có nghĩa là căn chỉnh phần tử về phía bên phải của phần tử cha, 
+                        và là viết tắt của thuộc tính CSS margin-left: auto. -->
+
+                        <!-- Chú Giải 13:Class mb-2 có nghĩa là tạo một khoảng cách dưới có độ dài tương đương với 2 đơn vị đo lường (unit) 
+                        của font hiện tại của phần tử đó, 
+                        và là viết tắt của thuộc tính CSS margin-bottom: 0.5rem. -->
 
 
-
-            <div class="menu-container">
-                <div class="menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="index.html">Trang Chủ</a></li>
-                        <li><a href="page2.html">Hỗ Trợ</a></li>
-                        <li><a href="#">Ngôn Ngữ</a></li>
-                        <li><a href="#">Đăng Ký</a></li>
-                        <li><a href="#">Đăng Nhập</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\Shoppe\Index.html">Trang
+                                Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\page2.html">Hỗ
+                                Trợ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tài Khoản
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Đăng Kí</a></li>
+                                <li><a class="dropdown-item" href="#">Đăng Nhập</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Đăng Xuất</a></li>
+                            </ul>
+                        </li>
                     </ul>
+
+                    <!-- Tìm Kiếm -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
-
             </div>
-        </div>
-
-        <div class="search-buy">
-            <div class="search-box">
-                <input type="text" placeholder="Search">
-                <button type="submit">Tìm kiếm</button>
-            </div>
-        </div>
-
+        </nav>
     </header>
 
-    <div class="khoangtrong">
-    </div>
+    <div class="container">
+        <div class="row">
+            <div class=" col col-md-5 col-xs-12">
+                <img class="img-fluid"
+                    src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Sản Phẩm\7f529a9512a0f2eb8c52e538e11ced84.jpg"
+                    alt="ảnh lớn" height="50%">
 
-    <div class="card">
-        <div class="container-1">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-6">
-                    <img src="C:\Users\Admin\Downloads\91afaed54396c141d15d1a420856019b_tn.jpg" class="img-fluid">
-                    <div class="row mt-3">
-                        <div class="col-lg-3 col-md-3 col-3">
-                            <img src="C:\Users\Admin\Downloads\9b17119b3739420a4cbcc935441d3ee0_tn.jpg"
-                                class="img-fluid">
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-3">
-                            <img src="C:\Users\Admin\Downloads\9c008c2cfe03c6f18d8c7341250c0b50_tn.jpg"
-                                class="img-fluid">
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-3">
-                            <img src="C:\Users\Admin\Downloads\33c07c1111a406486f0231089f3e88bc_tn.jpg"
-                                class="img-fluid">
+                <div class="row row-xs-12">
+                    <div class=" col col-md-3 col-xs-3">
+                        <img class="img-fluid"
+                            src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Sản Phẩm\118a43398fea33f09ecaf330cc5204dd.jpg"
+                            alt="ảnh nhỏ 1" height="125">
+                    </div>
+                    <div class=" col col-md-3 col-xs-3">
+                        <img class="img-fluid"
+                            src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Sản Phẩm\a585e48b87a7d124cd1fa92c84ac93d3.jpg"
+                            alt="ảnh nhỏ 2" height="125">
+                    </div>
+                    <div class=" col col-md-3 col-xs-3">
+                        <img class="img-fluid"
+                            src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Sản Phẩm\efe092d1922b7d6a5f1598ec9e284264.jpg"
+                            alt="ảnh nhỏ 3" height="125">
+                    </div>
+                    <div class=" col col-md-3 col-xs-3">
+                        <img class="img-fluid"
+                            src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Sản Phẩm\vn-11134201-23020-8w8pybh9vunvac_tn.jpg"
+                            alt="ảnh nhỏ 4" height="125">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-7">
+                <h3>Áo Sơ Mi Nam</h3>
+                <div class="row">
+                    <div class="col-md-6" style="color: gray;">
+                        <p>Trạng Thái:Còn Hàng</p>
+                    </div>
+                    <div class="col-md-6" style="color: gray;">
+                        <p>Xuất sứ:Trung Quốc</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <p>Vận Chuyển:</p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="shippingDropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tỉnh Thành
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="shippingDropdown">
+                                <a class="dropdown-item" href="#">Miền Bắc</a>
+                                <a class="dropdown-item" href="#">Miền Trung</a>
+                                <a class="dropdown-item" href="#">Miền Nam</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Liên hệ để biết thêm chi tiết</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 ">
-                    <h3>Quạt Tích Điện </h3>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>Số lượng : 5000</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Xuất Sứ : Hà Nội</p>
-                        </div>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        Màu sắc
                     </div>
-                    <div class="row">
-                        <div class="col-md-2">
-                            <p>Màu Sắc Sản Phẩm:</p>
-                        </div>
-                        <div class="col-md-3">
-                            <button class="btn btn-warning me-md-2" type="button">Màu vàng</button>
-                        </div>
-                        <div class="col-md-3">
-                            <button class="btn btn-dark me-md-2" type="button">Màu đen</button>
-                        </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-secondary" type="button">Màu xám</button>
-                        </div>
-                    </div>
-                    <p>Bảo Hiểm Thiết Bị Điện Tử</p>
                     <div class="col">
-                        <p>Miễn Phí Vận Chuyển</p>
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <p>Đơn Vị Vận Chuyển:</p>
+                        <div class="form-group">
+
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-primary active">
+                                    <input type="radio" name="mauSac" id="option1" autocomplete="off" checked> Màu 1
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="mauSac" id="option2" autocomplete="off"> Màu 2
+                                </label>
+                                <label class="btn btn-success">
+                                    <input type="radio" name="mauSac" id="option3" autocomplete="off"> Màu 3
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" name="mauSac" id="option4" autocomplete="off"> Màu 4
+                                </label>
                             </div>
-                            <div class="col-xs-6">
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Tỉnh Thành
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Miền Bắc</a></li>
-                                        <li><a class="dropdown-item" href="#">Miền Trung</a></li>
-                                        <li><a class="dropdown-item" href="#">Miền Nam</a></li>
-                                    </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="row mt-1">
+                        <div class="col-md-2">
+                            Size áo:
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-outline-primary">
+                                        <input type="radio" name="options" id="option1" autocomplete="off"> Size S
+                                    </label>
+                                    <label class="btn btn-outline-primary">
+                                        <input type="radio" name="options" id="option2" autocomplete="off"> Size M
+                                    </label>
+                                    <label class="btn btn-outline-primary">
+                                        <input type="radio" name="options" id="option3" autocomplete="off"> Size L
+                                    </label>
+                                    <label class="btn btn-outline-primary">
+                                        <input type="radio" name="options" id="option4" autocomplete="off"> Size XL
+                                    </label>
                                 </div>
                             </div>
-
                         </div>
 
+                        <div class="row mt-1">
+                            <div class="col-md-2">
+                                Số Lượng:
+                            </div>
+                            <div class="col">
+                                <div class="quantity" style="margin-left: 4px;">
+                                    <input type="number" min="0" max="99999" step="1" value="0">
+                                    <button class="plus-btn" type="button">+</button>
+                                    <button class="minus-btn" type="button">-</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2">
+                                Mô tả sản phẩm:
+                            </div>
+                            <div class="col">
+                                <p>
+                                    Áo sơ mi cộc tay là một trong những món đồ thời trang nam được ưa chuộng trong mùa
+                                    hè, đặc biệt là khi thời tiết nóng bức. Áo được thiết kế với tay cộc ngắn, giúp cho
+                                    người mặc thoải mái và thoáng mát hơn trong những ngày hè. Chất liệu vải mềm mại và
+                                    thoáng khí giúp cho người mặc không bị đổ mồ hôi trong suốt cả ngày.
+
+                                    Áo sơ mi cộc tay có kiểu dáng đơn giản nhưng vẫn sang trọng và lịch sự. Áo được cắt
+                                    may tỉ mỉ và chắc chắn, tạo nên sự đẹp mắt và chất lượng cao. Điểm nhấn của áo là cổ
+                                    áo cổ điển và nút cài trang trí, giúp cho người mặc trông thật nam tính và phong
+                                    cách.
+
+                                    Sản phẩm có thể kết hợp với nhiều phong cách khác nhau, từ trang phục công sở đến
+                                    trang phục dạo phố. Bên cạnh đó, áo sơ mi cộc tay còn là món quà tuyệt vời cho các
+                                    quý ông, đặc biệt là trong các dịp lễ, sinh nhật hay kỷ niệm đặc biệt.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <p>Giá Sản Phẩm : 60.000 đ</p>
-                    <button class="btn btn-primary">Mua ngay</button>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        Giá sản phẩm:
+                    </div>
+                    <div class="col">
+                        <p style="font-weight: 800; color: red;">90.000 đ</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        Đặt Hàng Ở Đây:
+                    </div>
+
+                    <div class="col">
+                        <button type="button" class="btn btn-primary">Đặt mua</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="card">
-        <div class="container-2">
-            <h3>Mô Tả Sản Phẩm</h3>
-            <p>
-                Quạt tích điện thông minh là giải pháp hoàn hảo cho không gian sống hiện đại của bạn.
-                Sản phẩm được tích hợp công nghệ thông minh, giúp quạt hoạt động linh hoạt và tiết kiệm điện năng. Quạt
-                có khả năng điều chỉnh tốc độ, hướng gió và thời gian hoạt động thông qua ứng dụng điện thoại hoặc điều
-                khiển từ xa. Thiết kế sang trọng, đa dạng kiểu dáng, phù hợp với mọi không gian trong nhà. Với quạt tích
-                điện thông minh,
-                bạn không chỉ có một sản phẩm tiện ích, mà còn đóng góp vào việc bảo vệ môi trường và giảm thiểu chi phí
-                điện năng cho gia đình.
-            </p>
-        </div>
-    </div>
-
-    <div class="container">
-        <a href="#" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\shopee-la-gi.jpg"
-                alt="Image 1">
-            <p>Máy Ảnh Canon E0S R5 </p>
-
-        </a>
-
-        <a href="#" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\iphone-12-violet-1-200x200.jpg"
-                alt="Image 2">
-            <p>iphone 12 64GB</p>
-        </a>
-
-        <a href="#" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\49731698368b80977f944ba0bafb8996.jpg"
-                alt="Image 2">
-            <p>Bút cảm ứng</p>
-        </a>
-
-        <a href="contact.html" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\05acd7da1cbde550a4f3d63432dfc1b1.jpeg"
-                alt="Image 2">
-            <p>Quạt tích điện có đế </p>
-        </a>
-
-        <a href="#" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\images.jpg"
-                alt="Image 2">
-            <p>Hộp Sữa Vinamink</p>
-        </a>
-
-        <a href="#" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\vsmart-live-blue-600x600.jpg"
-                alt="Image 2">
-            <p>Điện Thoại Vsmart live 4</p>
-        </a>
-
-        <a href="#" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\tải xuống.jpg"
-                alt="Image 2">
-            <p>Kính cường lực loại dẻo</p>
-        </a>
-
-        <a href="#" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\tải xuống (1).jpg"
-                alt="Image 2">
-            <p>Kính cường lực iphone </p>
-        </a>
-
-        <a href="#" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\CDL10_1.jpg"
-                alt="Image 2">
-            <p>Áo phông đen</p>
-        </a>
-
-        <a href="#" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\tải xuống (2).jpg"
-                alt="Image 2">
-            <p>Áo thun nam/nữ</p>
-        </a>
-
-        <a href="#" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\tải xuống (3).jpg"
-                alt="Image 2">
-            <p>Đồng phục vovinam</p>
-        </a>
-
-        <a href="#" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\tải xuống (4).jpg"
-                alt="Image 2">
-            <p>Dây chuyền 12 cung hoàng đạo</p>
-        </a>
-
-        <a href="#" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\tải xuống (5).jpg"
-                alt="Image 2">
-            <p>Nhẫn cưới cặp </p>
-        </a>
-
-        <a href="#" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\tải xuống (6).jpg"
-                alt="Image 2">
-            <p>Kính râm</p>
-        </a>
-
-        <a href="#" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\tải xuống (7).jpg"
-                alt="Image 2">
-            <p>Bộ kính thực tế ảo</p>
-        </a>
-
-        <a href="#" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\tải xuống (8).jpg"
-                alt="Image 2">
-            <p>Váy hoạ tiết đậm phong cách tiểu thư</p>
-        </a>
-
-        <a href="#" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\tải xuống (9).jpg"
-                alt="Image 2">
-            <p>Váy hoa tay xòe vạt chéo</p>
-        </a>
-
-        <a href="#" class="box-item">
-            <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Item\images (2).jpg"
-                alt="Image 2">
-            <p>Đầm ôm eo</p>
-        </a>
-
-        
-    </div>
-
-    <div class="box-footer">
-        <a href="#" style="text-decoration: none; color: black;">
-            <p>Xem Thêm</p>
-        </a>
     </div>
     <hr>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="row">
-                        <h3>Chăm Sóc Khách Hàng</h3>
-                    </div>
-                    <div class="row">
-                        <p><a href="#" class="text-decoration-none text-dark">Trung tâm trợ giúp</a></p>
-                    </div>
-                    <div class="row">
-                        <p><a href="#" class="text-decoration-none text-dark">Shopee Blog</a></p>
-                    </div>
-                    <div class="row">
-                        <p><a href="#" class="text-decoration-none text-dark">Hướng Dẫn Mua Hàng</a></p>
-                    </div>
-                    <div class="row">
-                        <p><a href="#" class="text-decoration-none text-dark">Thanh Toán</a></p>
-                    </div>
+
+    <div class="container">
+        <div class="box-1" style="border: 1px solid whitesmoke;">
+            <a href="#" style="text-decoration: none;">
+                <div class="box-item">
+                    <img src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Item\Booth\4bb0faf090bcac0c7427a884680e6374_tn.jpg"
+                        alt="Xe Máy" height="150" width="150">
+                    <p class="" style="text-align: center; color: black;">Găng Tay Chơi Game </p>
                 </div>
-
-                <div class="col-md-3">
-                    <div class="row">
-                        <h3>Về Shopee</h3>
-                    </div>
-                    <div class="row">
-                        <p><a href="#" class="text-decoration-none text-dark">Giới Thiệu Về Shopee Việt Nam</a></p>
-                    </div>
-                    <div class="row">
-                        <p><a href="#" class="text-decoration-none text-dark">Tuyển Dụng</a></p>
-                    </div>
-                    <div class="row">
-                        <p><a href="#" class="text-decoration-none text-dark">Điều Khoản Shoppe</a></p>
-                    </div>
-                    <div class="row">
-                        <p><a href="#" class="text-decoration-none text-dark">Chính Sách Bảo Mật</a></p>
-                    </div>
+            </a>
+            <a href="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\contact.html"
+                style="text-decoration: none;">
+                <div class="box-item">
+                    <img src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Item\Booth\27f60dfe9928d3ea286178367673db9b_tn.jpg"
+                        alt="Xe Máy" height="150" width="150">
+                    <p style="text-align: center; color: black;">Áo cộc Tay Nam </p>
                 </div>
-
-                <div class="col-md-3">
-                    <div class="row">
-                        <h3>Thanh toán</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a href="#"><img
-                                    src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Footer\2c46b83d84111ddc32cfd3b5995d9281.png"
-                                    alt="" height="30"></a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#"><img
-                                    src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Footer\38fd98e55806c3b2e4535c4e4a6c4c08.png"
-                                    alt="" height="30"></a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#"><img
-                                    src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Footer\9263fa8c83628f5deff55e2a90758b06.png"
-                                    alt="" height="30"></a>
-                        </div>
-                    </div>
-
-                    <div class="row mt-4">
-                        <div class="col-md-4">
-                            <a href="#"><img
-                                    src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Footer\a0a9062ebe19b45c1ae0506f16af5c16.png"
-                                    alt="" height="30"></a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#"><img
-                                    src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Footer\d4bbea4570b93bfd5fc652ca82a262a8.png"
-                                    alt="" height="30"></a>
-                        </div>
-                    </div>
-
-
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <div class="box-item">
+                    <img src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Item\Booth\41dcb4b295f84e93414a1d2df3293c79_tn.jpg"
+                        alt="Xe Máy" height="150" width="150">
+                    <p style="text-align: center; color: black;">Cổ Phục Nữ Trung Hoa </p>
                 </div>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <div class="box-item">
+                    <img src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Item\Booth\441457eec10aea401e70f03a50b29ae3_tn.jpg"
+                        alt="Xe Máy" height="150" width="150">
+                    <p style="text-align: center; color: black;">Trang Phục Trung Hoa Anime </p>
+                </div>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <div class="box-item">
+                    <img src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Item\Booth\3147930d73a5cb30cc4ac0640dce5cdc_tn.jpg"
+                        alt="Xe Máy" height="150" width="150">
+                    <p style="text-align: center; color: black;">Váy Công Chúa Trung Hoa</p>
+                </div>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <div class="box-item">
+                    <img src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Item\Booth\38286873619702b1145a2abd4cab579e_tn.jpg"
+                        alt="Xe Máy" height="150" width="150">
+                    <p style="text-align: center; color: black;">Váy Nữ Hầu Nâu</p>
+                </div>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <div class="box-item">
+                    <img src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Item\Booth\cd129b3cbf8c928c7aeaadfaaa079a9c_tn.jpg"
+                        alt="Xe Máy" height="150" width="150">
+                    <p style="text-align: center; color: black;">Thẻ Bọc Ngân Hàng </p>
+                </div>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <div class="box-item">
+                    <img src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Item\Booth\sg-11134201-22110-w689o5kg9jjv58_tn.jpg"
+                        alt="Xe Máy" height="150" width="150">
+                    <p style="text-align: center; color: black;">Kính Cường Lực </p>
+                </div>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <div class="box-item">
+                    <img src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Item\Booth\vn-11134201-23030-wffim6jjfioveb_tn.jpg"
+                        alt="Xe Máy" height="150" width="150">
+                    <p style="text-align: center; color: black;">Dao Bấm </p>
+                </div>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <div class="box-item">
+                    <img src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Item\Booth\vn-11134207-7qukw-lfc0732g2f05b7_tn.jpg"
+                        alt="Xe Máy" height="150" width="150">
+                    <p style="text-align: center; color: black;">Điện Thoại Pova 4 </p>
+                </div>
+            </a>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col col-xs-6 col-md-3 col-lg-3">
+                <h4>Chăm Sóc Khách Hàng</h4>
+                <div class="col">Trung Tâm Trợ Giúp</div>
+                <div class="col">Shopee Mail</div>
+                <div class="col">Hướng Dẫn Mua Hàng</div>
+                <div class="col">Thanh Toán</div>
+                <div class="col">Chính Sách Bảo Hành</div>
+            </div>
 
-                <div class="col-md-3">
-                    <div class="row">
-                        <h3>Đơn Vị Vận Chuyển</h3>
-                    </div>
-                    <div class="row ">
+            <div class="col col-xs-6 col-md-3 col-lg-3">
+                <h4>Về Shopee</h4>
+                <div class="col">Tuyển Dụng</div>
+                <div class="col">Điều Khoản Shopee</div>
+                <div class="col">Chính Hãng</div>
+                <div class="col">Kênh Người Bán</div>
+            </div>
+
+            <div class="col col-xs-6 col-md-3 col-lg-3">
+                <h4>Thanh Toán</h4>
+                <div class="row">
+                    <div class="col">
                         <a href="#"><img
-                                src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Footer\Trang Chính .svg"
-                                alt="" height="150"></a>
+                                src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Footer\d4bbea4570b93bfd5fc652ca82a262a8.png"
+                                alt=""></a>
+                    </div>
+                    <div class="col">
+                        <a href="#"><img
+                                src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Footer\a0a9062ebe19b45c1ae0506f16af5c16.png"
+                                alt=""></a>
+                    </div>
+                    <div class="col">
+                        <a href=""><img
+                                src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Footer\38fd98e55806c3b2e4535c4e4a6c4c08.png"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="#"><img
+                                src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Footer\5e3f0bee86058637ff23cfdf2e14ca09.png"
+                                alt=""></a>
+                    </div>
+                    <div class="col">
+                        <a href="#"><img
+                                src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Footer\bc2a874caeee705449c164be385b796c.png"
+                                alt=""></a>
+                    </div>
+                    <div class="col">
+                        <a href="#"><img
+                                src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Footer\2c46b83d84111ddc32cfd3b5995d9281.png"
+                                alt=""></a>
                     </div>
                 </div>
             </div>
 
+            <div class="col col-xs-6 col-md-3 col-lg-3 ">
+                <h4>Các kênh truyền thông</h4>
+                <div class="col">
+                    <a href="#">
+                        <div class="col" style="color: black;text-decoration: none;">Facebook</div>
+                        <div class="col" style="color: black; text-decoration: none;">Zalo</div>
+                    </a>
+                </div>
+            </div>
         </div>
-    </footer>
 </body>
 
 </html>

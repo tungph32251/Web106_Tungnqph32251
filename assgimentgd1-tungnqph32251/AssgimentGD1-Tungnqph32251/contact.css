@@ -5,105 +5,70 @@
   /* box-sizing: border-box; là một thuộc tính CSS để xác định cách tính kích thước của một phần tử HTML. */
 }
 
-body {
-  width: auto;
-  margin: 0 auto;
-}
 
-header {
-  background-color: orange;
-  width: auto;
-  height: 123px;
-}
-
-.float {
-  display: flex;
-  justify-content: space-between;
-  /* Thuộc tính CSS "justify-content: space-between;" được sử dụng để căn giữa các phần tử con trong container theo chiều ngang và tạo khoảng trống đều giữa chúng */
-  align-items: center;
-  height: 50px;
+.quantity {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 120px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
-/* phần ảnh logo */
-.image-logo {
-  position: absolute;
-  top: 0;
+.quantity input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 5px;
+  border: none;
+  font-size: 16px;
+  text-align: center;
+  background-color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-.image-logo img {
-  width: 30%;
-  height: 10%;
-  margin: 10px 10px;
+.quantity button {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 100%;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  line-height: 38px;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-/* Phần menu */
-.menu {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+.quantity button:hover {
+  background-color: #ccc;
 }
 
-.menu ul {
-  list-style: none;
-  display: flex;
+.quantity button.plus-btn {
+  border-left: 1px solid #ccc;
 }
 
-.menu li {
-  margin-right: 20px;
+.quantity button.minus-btn {
+  border-right: 1px solid #ccc;
 }
 
-.menu li a {
-  text-decoration: none;
-  color: aliceblue;
-}
-
-/* Phần tìm kiếm */
-.search-buy {
-  position: relative;
-}
-
-.search-box {
-  position: absolute;
-  right: 60px;
-}
-
-.search-box input {
-  width: 250px;
-  /* kích thước input là 300px */
-  height: 30px;
-}
-
-.search-box button {
-  height: 30px;
-}
-
-.khoangtrong {
-  background-color: aqua;
-  width: auto;
-  height: 20px;
-}
-
-.container-1 {
-  background-color: antiquewhite;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
-.container-2 {
-
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
-.container {
+.box-1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 10px;
-  margin-right: 10px;
+
+}
+
+.box-1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .box-item {
@@ -117,7 +82,6 @@ header {
   padding: 10px;
   background-color: #f5f5f5;
   text-align: center;
-  text-decoration: none;
 }
 
 .box-item:hover {
@@ -125,90 +89,26 @@ header {
   color: lavenderblush;
 }
 
-.box-item img {
-  width: 100%;
-  height: auto;
+a {
+  text-decoration: none;
 }
 
-.box-item p {
-  margin-top: 10px;
-  color: black;
-}
-
-.box-footer {
-  border: 1px solid black;
-  width: 200px;
-  height: 50px;
-  background-color: aliceblue;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  margin-top: 10px;
-  line-height: 50px;
-}
-@media screen and (max-width: 475px) {
-
-  /* Iphone SE */
-  /* Điều chỉnh kích thước các phần tử khi màn hình có chiều rộng nhỏ hơn hoặc bằng 475px */
-  .menu-container {
-    position: relative;
-    margin-left: 75%;
+@media screen and (max-width: 576px) {
+  .box-1{
+    grid-template-columns: repeat(2, 1fr);
   }
-
-  .menu-toggle {
-    display: block;
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
-    padding: 10px;
-  }
-
-  .menu-toggle span {
-    display: block;
-    width: 24px;
-    height: 3px;
-    margin-bottom: 4px;
-    position: relative;
-    background-color: #333;
-    transition: transform 0.4s ease-out;
-  }
-
-  .menu-toggle span:last-child {
-    margin-bottom: 0;
-  }
-
-  .menu-toggle.active span:first-child {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-toggle.active span:last-child {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-
-  .menu {
+  .box-1 > div:nth-child(n+2){
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 0;
-    background-color: #fff;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-  }
-
-  .menu.active {
-    display: block;
-  }
-
-  .search-box input[type="text"] {
-    width: 150px;
-  }
-
-  .search-box button[type="text"] {
-    width: 50px;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .box-1{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .box-1>div:nth-child(n+4){
+    display: none;
+  }
+}
+

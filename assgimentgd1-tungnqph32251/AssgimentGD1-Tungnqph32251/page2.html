@@ -15,29 +15,100 @@
 
 <body>
     <header>
-        <div class="row">
-            <div class="col-md-9 col-xs-6">
-                <nav class="navbar  navbar-light bg-light">
-                    <!-- chú giải -->
-                    <!-- Thuộc tính "navbar-expand-lg" chỉ định rằng thanh điều hướng 
-                    sẽ mở rộng trên các thiết bị lớn hơn một mức độ nhất định -->
-                    <!-- Lớp "navbar-light" xác định phông chữ và màu sắc cho thanh điều hướng. -->
-                    <a class="navbar-brand" href="#">
-                        <img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh\Ảnh Logo\Shopee.svg"
-                            alt="Logo" height="80">
-                    </a>
-                </nav>
-            </div>
-
-            <div class="col-md-3 col-xs-6">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Chính sách quy tắc của shop</a>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
+        <header>
+            <nav class="navbar   navbar-expand-lg   bg-body-tertiary">
+                <!-- Chú Giải 1:
+                navbar là một thành phần giao diện người dùng được sử dụng để tạo ra thanh định tuyến (navigation bar) trên trang web. 
+                Thanh định tuyến thường được sử dụng để chứa các liên kết đến các trang khác trong trang web, 
+                hoặc để chứa các liên kết đến các phần khác trong cùng trang web. -->
+    
+                <!-- Chú Giải 2:
+                navbar-expand-lg có nghĩa là thanh định tuyến sẽ tự động mở rộng thành một 
+                thanh định tuyến đầy đủ (full navigation bar) trên các màn hình có độ rộng lớn hơn hoặc bằng 992px, -->
+    
+                <!-- Chú Giải 3:
+                bg-body-tertiary là một lớp CSS được sử dụng để tạo màu nền (background color) cho thành phần. -->
+    
+                <div class="container-fluid">
+                    <!-- Chú Giải 4:
+                    container-fluid thường được sử dụng để tạo ra các trang web đáp ứng,
+                    nơi mà kích thước của trang web phải thích nghi với kích thước của màn hình và các thiết bị khác nhau. 
+                    Nó cho phép các phần tử trong khối chứa được tự động điều chỉnh để phù hợp với kích thước màn hình -->
+    
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#"><img
+                            src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Logo\logo-shopee-inkythuatso (4).svg"
+                            alt="Logo Shoppe" height="50"></a>
+                    <!-- Chú Giải 5:Trong Bootstrap, navbar-brand là một thành phần giao diện người dùng được 
+                        sử dụng để hiển thị logo hoặc tên của trang web trên thanh định tuyến (navigation bar). -->
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- Chú Giải 6:Trong Bootstrap, navbar-toggler 
+                    là một thành phần giao diện người dùng được sử dụng để tạo ra một nút bấm để 
+                    thu gọn hoặc mở rộng thanh định tuyến (navigation bar)
+                    trên trang web.  -->
+    
+                        <!-- Chú Giải 7:data-bs-toggle="collapse" là một thuộc tính dữ liệu (data attribute) trong Bootstrap 5, 
+                    được sử dụng để kích hoạt hoặc vô hiệu hóa chức năng thu gọn (collapse) của một thành phần trên trang web. -->
+    
+                        <!-- Chú Giải 8:data-bs-target="#navbarSupportedContent" xác định thành phần được liên kết với 
+                    thanh định tuyến để kích hoạt chức năng mở rộng/thu gọn khi được bấm. -->
+    
+                        <!-- Chú Giải 9:aria-controls="navbarSupportedContent" cung cấp một ID cho thành phần được kiểm soát bởi nút mở rộng/thu gọn,
+                    để giúp đọc màn hình biết nội dung của thành phần đó. -->
+    
+                        <!-- Chú Giải 10:aria-expanded="false" cung cấp trạng thái của thành phần mở rộng/thu gọn.
+                    Nếu giá trị là "false", nghĩa là thành phần đang ở trạng thái thu gọn. -->
+    
+                        <!-- Chú Giải 11:aria-label="Toggle navigation" cung cấp một nhãn đại diện cho nút mở rộng/thu gọn, 
+                    giúp người dùng biết chức năng của nút đó. -->
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <!-- Chú Giải 12:
+                            Class me-auto có nghĩa là căn chỉnh phần tử về phía bên phải của phần tử cha, 
+                            và là viết tắt của thuộc tính CSS margin-left: auto. -->
+    
+                            <!-- Chú Giải 13:Class mb-2 có nghĩa là tạo một khoảng cách dưới có độ dài tương đương với 2 đơn vị đo lường (unit) 
+                            của font hiện tại của phần tử đó, 
+                            và là viết tắt của thuộc tính CSS margin-bottom: 0.5rem. -->
+    
+    
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\Shoppe\Index.html">Trang
+                                    Chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\page2.html">Hỗ
+                                    Trợ</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Tài Khoản
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Đăng Kí</a></li>
+                                    <li><a class="dropdown-item" href="#">Đăng Nhập</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Đăng Xuất</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+    
+                        
+                    </div>
+                </div>
+            </nav>
+        </header>
 
     </header>
     <hr>
@@ -166,85 +237,72 @@
         <p>Số Điện Thoại Hỗ Trợ:18001506</p>
     </div>
 <hr>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="row">
-                        <h3>Chăm Sóc Khách Hàng</h3>
-                    </div>
-                    <div class="row">
-                        <p><a href="#" class="text-decoration-none text-dark">Trung tâm trợ giúp</a></p>
-                    </div>
-                    <div class="row">
-                        <p><a href="#" class="text-decoration-none text-dark">Shopee Blog</a></p>
-                    </div>
-                    <div class="row">
-                        <p><a href="#" class="text-decoration-none text-dark">Hướng Dẫn Mua Hàng</a></p>
-                    </div>
-                    <div class="row">
-                        <p><a href="#" class="text-decoration-none text-dark">Thanh Toán</a></p>
-                    </div>
-                </div>
-    
-                <div class="col-md-3">
-                    <div class="row">
-                        <h3>Về Shopee</h3>
-                    </div>
-                    <div class="row">
-                        <p><a href="#" class="text-decoration-none text-dark">Giới Thiệu Về Shopee Việt Nam</a></p>
-                    </div>
-                    <div class="row">
-                        <p><a href="#" class="text-decoration-none text-dark">Tuyển Dụng</a></p>
-                    </div>
-                    <div class="row">
-                        <p><a href="#" class="text-decoration-none text-dark">Điều Khoản Shoppe</a></p>
-                    </div>
-                    <div class="row">
-                        <p><a href="#" class="text-decoration-none text-dark">Chính Sách Bảo Mật</a></p>
-                    </div>
-                </div>
-                
-                <div class="col-md-3">
-                    <div class="row">
-                        <h3>Thanh toán</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a href="#"><img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Footer\2c46b83d84111ddc32cfd3b5995d9281.png" alt="" height="30"></a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#"><img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Footer\38fd98e55806c3b2e4535c4e4a6c4c08.png" alt="" height="30"></a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#"><img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Footer\9263fa8c83628f5deff55e2a90758b06.png" alt="" height="30" ></a>
-                        </div>
-                    </div>
+<div class="row">
+    <div class="col col-xs-6 col-md-3 col-lg-3">
+        <h4>Chăm Sóc Khách Hàng</h4>
+        <div class="col">Trung Tâm Trợ Giúp</div>
+        <div class="col">Shopee Mail</div>
+        <div class="col">Hướng Dẫn Mua Hàng</div>
+        <div class="col">Thanh Toán</div>
+        <div class="col">Chính Sách Bảo Hành</div>
+    </div>
 
-                    <div class="row mt-4">
-                        <div class="col-md-4">
-                            <a href="#"><img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Footer\a0a9062ebe19b45c1ae0506f16af5c16.png" alt="" height="30"></a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#"><img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Footer\d4bbea4570b93bfd5fc652ca82a262a8.png" alt="" height="30"></a>
-                        </div>
-                    </div>
+    <div class="col col-xs-6 col-md-3 col-lg-3">
+        <h4>Về Shopee</h4>
+        <div class="col">Tuyển Dụng</div>
+        <div class="col">Điều Khoản Shopee</div>
+        <div class="col">Chính Hãng</div>
+        <div class="col">Kênh Người Bán</div>
+    </div>
 
-
-                </div>
-
-                <div class="col-md-3">
-                    <div class="row">
-                        <h3>Đơn Vị Vận Chuyển</h3>
-                    </div>
-                    <div class="row ">
-                            <a href="#"><img src="C:\Users\Admin\Desktop\Web106_Tungnqph32251\assgimentgd1-tungnqph32251\AssgimentGD1-Tungnqph32251\images\Ảnh Footer\Trang Chính .svg" alt="" height="150" ></a>
-                    </div>
-                </div>
+    <div class="col col-xs-6 col-md-3 col-lg-3">
+        <h4>Thanh Toán</h4>
+        <div class="row">
+            <div class="col">
+                <a href="#"><img
+                        src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Footer\d4bbea4570b93bfd5fc652ca82a262a8.png"
+                        alt=""></a>
             </div>
-            
+            <div class="col">
+                <a href="#"><img
+                        src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Footer\a0a9062ebe19b45c1ae0506f16af5c16.png"
+                        alt=""></a>
+            </div>
+            <div class="col">
+                <a href=""><img
+                        src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Footer\38fd98e55806c3b2e4535c4e4a6c4c08.png"
+                        alt=""></a>
+            </div>
         </div>
-    </footer>
+        <div class="row">
+            <div class="col">
+                <a href="#"><img
+                        src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Footer\5e3f0bee86058637ff23cfdf2e14ca09.png"
+                        alt=""></a>
+            </div>
+            <div class="col">
+                <a href="#"><img
+                        src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Footer\bc2a874caeee705449c164be385b796c.png"
+                        alt=""></a>
+            </div>
+            <div class="col">
+                <a href="#"><img
+                        src="D:\Công Nghệ Thông Tin\Html_Css\Lab-Demo\Shoppe\Images\Image Footer\2c46b83d84111ddc32cfd3b5995d9281.png"
+                        alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col col-xs-6 col-md-3 col-lg-3 ">
+        <h4>Các kênh truyền thông</h4>
+        <div class="col">
+            <a href="#">
+                <div class="col" style="color: black;text-decoration: none;">Facebook</div>
+                <div class="col" style="color: black; text-decoration: none;">Zalo</div>
+            </a>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
